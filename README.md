@@ -1,10 +1,10 @@
 # 🌐 Testes de API com Postman
 
-## 📌 Objetivo
+## 📌 Sobre o projeto
 
-Realizar testes de API utilizando o Postman, validando requisições HTTP, status de resposta e dados retornados.
+Este projeto tem como objetivo realizar testes de API utilizando o Postman, validando requisições HTTP, status de resposta e estrutura dos dados retornados.
 
-## 🔧 Ferramenta
+## 🔧 Ferramentas utilizadas
 
 * Postman
 
@@ -16,18 +16,21 @@ https://jsonplaceholder.typicode.com/
 
 ### ✅ GET /posts
 
-* Status 200
-* Retorno de lista com dados
+* Validação de status 200
+* Retorno em formato array
+* Lista não vazia
+* Validação de campos (id, title, body)
 
 ### ✅ GET /posts/1
 
-* Status 200
-* Retorno de post específico
+* Validação de status 200
+* Retorno de objeto único
 
 ### ✅ POST /posts
 
-* Status 201
+* Validação de status 201
 * Criação de novo post
+* Retorno com ID
 
 ---
 
@@ -35,15 +38,15 @@ https://jsonplaceholder.typicode.com/
 
 ### 🔹 GET - Listar posts
 
-![Listar posts](./evidencias/listar-posts.png)
+![GET posts](./evidencias/get-posts.png)
 
 ### 🔹 GET - Post por ID
 
-![Post por ID](./evidencias/post-id.png)
+![GET post ID](./evidencias/get-post-id.png)
 
 ### 🔹 POST - Criar post
 
-![Criar post](./evidencias/criar-post.png)
+![POST create](./evidencias/post-create.png)
 
 ---
 
