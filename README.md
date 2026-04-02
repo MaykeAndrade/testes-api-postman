@@ -24,19 +24,29 @@ https://jsonplaceholder.typicode.com/
 
 * Validação de status code 200
 * Verificação de retorno em formato array
-* Validação de lista não vazia
-* Verificação de campos obrigatórios (id, title, body)
+* Lista não vazia
+* Validação de campos obrigatórios (id, title, body)
 
 ### ✅ GET /posts/1
 
 * Validação de status code 200
-* Verificação de retorno de objeto único
+* Retorno de objeto único
 
 ### ✅ POST /posts
 
 * Validação de status code 201
 * Criação de novo post
-* Validação de retorno com ID
+* Retorno com ID
+
+### ✅ PUT /posts/1
+
+* Validação de status code 200
+* Atualização de dados do post
+
+### ✅ DELETE /posts/1
+
+* Validação de status code 200
+* Remoção de post
 
 ---
 
@@ -45,7 +55,7 @@ https://jsonplaceholder.typicode.com/
 Os testes foram estruturados para validar:
 
 * Status das requisições HTTP
-* Estrutura dos dados retornados
+* Estrutura dos dados retornados (JSON)
 * Integridade das respostas da API
 * Comportamento esperado dos endpoints (CRUD)
 
@@ -65,12 +75,38 @@ Os testes foram estruturados para validar:
 
 ![POST create](./evidencias/post-create.png)
 
+### 🔹 PUT - Atualizar post
+
+![PUT update](./evidencias/put-update.png)
+
+### 🔹 DELETE - Deletar post
+
+![DELETE post](./evidencias/delete-post.png)
+
 ---
 
-## 📂 Arquivos do projeto
+## 📂 Estrutura do projeto
 
-* Collection exportada do Postman (.json)
-* Pasta de evidências com prints dos testes
+```
+testes-api-postman/
+├── evidencias/
+│   ├── get-posts.png
+│   ├── get-post-id.png
+│   ├── post-create.png
+│   ├── put-update.png
+│   ├── delete-post.png
+├── Testes-API-Postman.json
+└── README.md
+```
+
+---
+
+## 📌 Como executar
+
+1. Importar a collection no Postman
+2. Executar as requisições disponíveis
+3. Verificar os testes automatizados na aba "Tests"
+4. Conferir as evidências disponíveis no projeto
 
 ---
 
